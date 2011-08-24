@@ -67,8 +67,6 @@ module Rack
           when :path
             path = CGI::unescape(id_or_path)
             Mongo::GridFileSystem.new(db).open(path, "r")
-            #          when :io_id
-            #Mongo::Grid.new(MongoMapper.database).get('4e50fbdc6b13eb1956000465_logo_original')
           end
         end
 
